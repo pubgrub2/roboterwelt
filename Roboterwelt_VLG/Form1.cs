@@ -81,7 +81,9 @@ namespace Roboterwelt_VLG
             if (aufgabe == 4)
             {
                 w.ElementHinzufuegen(r, 'b', 6);
+
                 w.ElementHinzufuegen(b1, 'f', 6);
+
                 w.ElementHinzufuegen(p1, 'h', 6);
             }
 
@@ -183,8 +185,9 @@ namespace Roboterwelt_VLG
             DoubleBuffered = true;
             groupBox1.Left = ClientSize.Width - 130;
             w.HintergrundFarbe = this.BackColor;
-            w.BitmapGeaendert += OnPaint;
             w.aktualisiereBitmap();
+            w.BitmapGeaendert += OnPaint;
+            
         }
 
         private void button_linksdrehen_Click(object sender, EventArgs e)
@@ -216,5 +219,6 @@ namespace Roboterwelt_VLG
         {
             r.ablegen();
         }
+
     }
 }

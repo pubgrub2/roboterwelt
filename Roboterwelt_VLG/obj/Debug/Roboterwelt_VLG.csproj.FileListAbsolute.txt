@@ -40,3 +40,15 @@ C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.c
 C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.CoreCompileInputs.cache
 C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.exe
 C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.pdb
+C:\git\roboterwelt\Roboterwelt_VLG\bin\Debug\Roboterwelt_VLG.exe.config
+C:\git\roboterwelt\Roboterwelt_VLG\bin\Debug\Roboterwelt_VLG.exe
+C:\git\roboterwelt\Roboterwelt_VLG\bin\Debug\Roboterwelt_VLG.pdb
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.AssemblyReference.cache
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.SuggestedBindingRedirects.cache
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.exe.config
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.Form1.resources
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.Properties.Resources.resources
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.GenerateResource.cache
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.CoreCompileInputs.cache
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.exe
+C:\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.pdb

@@ -42,10 +42,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 26);
+            this.button1.Location = new System.Drawing.Point(7, 16);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 59);
+            this.button1.Size = new System.Drawing.Size(162, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = "ausführen";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,7 +53,7 @@
             // 
             // button_schritt
             // 
-            this.button_schritt.Location = new System.Drawing.Point(62, 92);
+            this.button_schritt.Location = new System.Drawing.Point(63, 71);
             this.button_schritt.Name = "button_schritt";
             this.button_schritt.Size = new System.Drawing.Size(50, 50);
             this.button_schritt.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // button_linksdrehen
             // 
-            this.button_linksdrehen.Location = new System.Drawing.Point(6, 93);
+            this.button_linksdrehen.Location = new System.Drawing.Point(7, 72);
             this.button_linksdrehen.Name = "button_linksdrehen";
             this.button_linksdrehen.Size = new System.Drawing.Size(50, 50);
             this.button_linksdrehen.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // button_rechtsdrehen
             // 
-            this.button_rechtsdrehen.Location = new System.Drawing.Point(118, 92);
+            this.button_rechtsdrehen.Location = new System.Drawing.Point(119, 71);
             this.button_rechtsdrehen.Name = "button_rechtsdrehen";
             this.button_rechtsdrehen.Size = new System.Drawing.Size(50, 50);
             this.button_rechtsdrehen.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             // button_umdrehen
             // 
-            this.button_umdrehen.Location = new System.Drawing.Point(6, 148);
+            this.button_umdrehen.Location = new System.Drawing.Point(7, 127);
             this.button_umdrehen.Name = "button_umdrehen";
             this.button_umdrehen.Size = new System.Drawing.Size(50, 50);
             this.button_umdrehen.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             // button_aufheben
             // 
-            this.button_aufheben.Location = new System.Drawing.Point(62, 148);
+            this.button_aufheben.Location = new System.Drawing.Point(63, 127);
             this.button_aufheben.Name = "button_aufheben";
             this.button_aufheben.Size = new System.Drawing.Size(50, 50);
             this.button_aufheben.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             // button_ablegen
             // 
-            this.button_ablegen.Location = new System.Drawing.Point(118, 148);
+            this.button_ablegen.Location = new System.Drawing.Point(119, 127);
             this.button_ablegen.Name = "button_ablegen";
             this.button_ablegen.Size = new System.Drawing.Size(50, 50);
             this.button_ablegen.TabIndex = 6;
@@ -113,6 +113,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button_ablegen);
             this.groupBox1.Controls.Add(this.button_schritt);
@@ -120,9 +121,9 @@
             this.groupBox1.Controls.Add(this.button_linksdrehen);
             this.groupBox1.Controls.Add(this.button_umdrehen);
             this.groupBox1.Controls.Add(this.button_rechtsdrehen);
-            this.groupBox1.Location = new System.Drawing.Point(710, 344);
+            this.groupBox1.Location = new System.Drawing.Point(713, 364);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 206);
+            this.groupBox1.Size = new System.Drawing.Size(175, 186);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -136,7 +137,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Roboterwelt";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
