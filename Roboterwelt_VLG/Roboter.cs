@@ -16,6 +16,7 @@ namespace Roboterwelt_VLG
         private int zielZeile;
         private List<Element> liste = new List<Element>();
         private Element ueberdeckt = null;
+        Walkscript ws = new Walkscript();
 
         private Bitmap[] robot;
         public Roboter()
@@ -188,6 +189,10 @@ namespace Roboterwelt_VLG
             w.ElementHinzufuegen(tmp, zielSpalte, zielZeile);
             return true;
         }
+        public void walkscript(string instructions)
+        {
+            ws.interprete(this, instructions);
+        }
         private void aktualisiereBitmap()
         {
             int d = 0;
@@ -204,5 +209,6 @@ namespace Roboterwelt_VLG
             }
             wrk = robot[d];
         }
+
     }
 }

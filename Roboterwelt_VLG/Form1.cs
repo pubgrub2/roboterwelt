@@ -28,6 +28,7 @@ namespace Roboterwelt_VLG
         Paket p2 = new Paket();
         Paket p3 = new Paket();
         Roboter r = new Roboter();
+
         public Form1()
         {
             
@@ -152,20 +153,22 @@ namespace Roboterwelt_VLG
 
             if (aufgabe == 4) // steuerung aufgabe 4 aktivieren
             {
-                r.dreheRechts();
-                for (int i = 0; i < 3; i++)
-                {
-                    r.schritt();
-                }
-                r.dreheLinks();
-                r.schritt();
-                r.dreheRechts();
-                r.schritt();
-                r.schritt();
-                r.dreheRechts();
-                r.schritt();
-                r.dreheLinks();
-                r.aufheben();
+                //r.dreheRechts();
+                //for (int i = 0; i < 3; i++)
+                //{
+                //    r.schritt();
+                //}
+                //r.dreheLinks();
+                //r.schritt();
+                //r.dreheRechts();
+                //r.schritt();
+                //r.schritt();
+                //r.dreheRechts();
+                //r.schritt();
+                //r.dreheLinks();
+                //r.aufheben();
+                r.walkscript("d3wawdwwdwaq");
+
             }
 
         }
