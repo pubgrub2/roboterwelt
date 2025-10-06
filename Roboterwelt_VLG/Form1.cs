@@ -13,7 +13,7 @@ namespace Roboterwelt_VLG
     public partial class Form1 : Form
     {
         // Hier werden die Elemente erzeugt...
-        int aufgabe = 3;
+        int aufgabe = 4;
         Welt w = new Welt(10, 12);
         Haus haus = new Haus();
         Baum b1 = new Baum();
@@ -78,6 +78,13 @@ namespace Roboterwelt_VLG
                 w.ElementHinzufuegen(h1, 'f', 6);
             }
 
+            if (aufgabe == 4)
+            {
+                w.ElementHinzufuegen(r, 'b', 6);
+                w.ElementHinzufuegen(b1, 'f', 6);
+                w.ElementHinzufuegen(p1, 'h', 6);
+            }
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -138,6 +145,24 @@ namespace Roboterwelt_VLG
                     r.umdrehen();
                 }
                 
+            }
+
+            if (aufgabe == 4) 
+            {
+                r.dreheRechts();
+                for (int i = 0; i < 3; i++)
+                {
+                    r.schritt();
+                }
+                r.dreheLinks();
+                r.schritt();
+                r.dreheRechts();
+                r.schritt();
+                r.schritt();
+                r.dreheRechts();
+                r.schritt();
+                r.dreheLinks();
+                r.aufheben();
             }
 
         }
