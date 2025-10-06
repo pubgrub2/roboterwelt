@@ -35,8 +35,8 @@ namespace Roboterwelt_VLG
             Initialize();
 
             //.... und hier auf der Welt platziert
-            
-            
+
+
 
             if (aufgabe == 1) // welt aufgabe 1 deaktivieren
             {
@@ -181,11 +181,40 @@ namespace Roboterwelt_VLG
         {
             this.ClientSize = new Size(w.gibBreite() * 42 + 50 + 150, w.gibHoehe() * 42 + 100);
             DoubleBuffered = true;
-            button1.Left = ClientSize.Width - 100;
+            groupBox1.Left = ClientSize.Width - 130;
             w.HintergrundFarbe = this.BackColor;
             w.BitmapGeaendert += OnPaint;
+            w.aktualisiereBitmap();
         }
 
-        
+        private void button_linksdrehen_Click(object sender, EventArgs e)
+        {
+            r.dreheLinks();
+        }
+
+        private void button_schritt_Click(object sender, EventArgs e)
+        {
+            r.schritt();
+        }
+
+        private void button_rechtsdrehen_Click(object sender, EventArgs e)
+        {
+            r.dreheRechts();
+        }
+
+        private void button_umdrehen_Click(object sender, EventArgs e)
+        {
+            r.umdrehen();
+        }
+
+        private void button_aufheben_Click(object sender, EventArgs e)
+        {
+            r.aufheben();
+        }
+
+        private void button_ablegen_Click(object sender, EventArgs e)
+        {
+            r.ablegen();
+        }
     }
 }
