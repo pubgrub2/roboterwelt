@@ -29,3 +29,14 @@ H:\Roboterwelt_VLG_V2.2\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.pdb
 \\server\janne.fuchs\Roboterwelt_VLG_V2.2\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.CoreCompileInputs.cache
 \\server\janne.fuchs\Roboterwelt_VLG_V2.2\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.exe
 \\server\janne.fuchs\Roboterwelt_VLG_V2.2\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.pdb
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\bin\Debug\Roboterwelt_VLG.exe.config
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\bin\Debug\Roboterwelt_VLG.exe
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\bin\Debug\Roboterwelt_VLG.pdb
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.AssemblyReference.cache
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.exe.config
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.Form1.resources
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.Properties.Resources.resources
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.GenerateResource.cache
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.csproj.CoreCompileInputs.cache
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.exe
+C:\Users\janne.fuchs\git\roboterwelt\Roboterwelt_VLG\obj\Debug\Roboterwelt_VLG.pdb

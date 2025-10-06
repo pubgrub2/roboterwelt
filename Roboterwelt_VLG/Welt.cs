@@ -15,7 +15,7 @@ namespace Roboterwelt_VLG
         private Bitmap bg;
         private Graphics gr;
         private int b, h;
-         private Element[,] feld;
+        private Element[,] feld;
         public eventHandler BitmapGeaendert;
         private int beschriftung = 50;
         private Color hintergrundfarbe;

@@ -127,6 +127,28 @@ namespace Roboterwelt_VLG
             aktualisiereBitmap();
             w.aktualisiereBitmap();
         }
+        public void umdrehen()
+        {
+            switch (dir)
+            {
+                case 'o':
+                    dir = 'u';
+                    break;
+                case 'l':
+                    dir = 'r';
+                    break;
+                case 'u':
+                    dir = 'o';
+                    break;
+                case 'r':
+                    dir = 'l';
+                    break;
+            }
+
+            System.Threading.Thread.Sleep(200);
+            aktualisiereBitmap();
+            w.aktualisiereBitmap();
+        }
         /// <summary>
         /// Je nach Ausrichtung wird das Feld "vor" dem Roboter ermittelt. Wenn Er zum rand steht ist sein Zielfeld sein aktuelles
         /// </summary>
