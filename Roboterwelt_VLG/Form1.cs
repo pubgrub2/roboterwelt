@@ -34,11 +34,12 @@ namespace Roboterwelt_VLG
             InitializeComponent();
             Initialize();
 
+
             //.... und hier auf der Welt platziert
 
 
 
-            if (aufgabe == 1) // welt aufgabe 1 deaktivieren
+            if (aufgabe == 1) // welt aufgabe 1 aktivieren
             {
                 w.ElementHinzufuegen(haus, 'a', 6);
                 
@@ -59,7 +60,7 @@ namespace Roboterwelt_VLG
                 w.ElementHinzufuegen(p3, 'c', 11);
             }
 
-            if (aufgabe == 2)
+            if (aufgabe == 2) // welt aufgabe 2 aktivieren
             {
                 w.ElementHinzufuegen(r, 'b', 6);
 
@@ -69,7 +70,7 @@ namespace Roboterwelt_VLG
                 w.ElementHinzufuegen(p2, 'f', 6);
             }
 
-            if (aufgabe == 3)
+            if (aufgabe == 3) // welt aufgabe 3 aktivieren
             {
                 w.ElementHinzufuegen(r, 'b', 6);
                 w.ElementHinzufuegen(p1, 'c', 6);
@@ -78,7 +79,7 @@ namespace Roboterwelt_VLG
                 w.ElementHinzufuegen(h1, 'f', 6);
             }
 
-            if (aufgabe == 4)
+            if (aufgabe == 4) // welt aufgabe 4 aktivieren
             {
                 w.ElementHinzufuegen(r, 'b', 6);
 
@@ -91,7 +92,7 @@ namespace Roboterwelt_VLG
         private void button1_Click(object sender, EventArgs e)
         {
             //-----hier kommt der ProgrammierCode des Roboters hin
-            if (aufgabe == 1)
+            if (aufgabe == 1) // steuerung aufgabe 1 aktivieren
             {
                 for (int i = 0; i < 1; i++)
                 {
@@ -113,7 +114,7 @@ namespace Roboterwelt_VLG
                 }
             }
 
-            if (aufgabe == 2)
+            if (aufgabe == 2) // steuerung aufgabe 2 aktivieren
             {
                 r.schritt();
                 r.dreheRechts();
@@ -135,7 +136,7 @@ namespace Roboterwelt_VLG
                 }
             }
 
-            if (aufgabe == 3)
+            if (aufgabe == 3) // steuerung aufgabe 3 aktivieren
             {
                 r.dreheRechts();
                 for (int i = 0; i < 3;  i++)
@@ -149,7 +150,7 @@ namespace Roboterwelt_VLG
                 
             }
 
-            if (aufgabe == 4) 
+            if (aufgabe == 4) // steuerung aufgabe 4 aktivieren
             {
                 r.dreheRechts();
                 for (int i = 0; i < 3; i++)
@@ -183,9 +184,9 @@ namespace Roboterwelt_VLG
         {
             this.ClientSize = new Size(w.gibBreite() * 42 + 50 + 150, w.gibHoehe() * 42 + 100);
             DoubleBuffered = true;
-            groupBox1.Left = ClientSize.Width - 130;
+            //groupBox1.Left = ClientSize.Width - 130;
             w.HintergrundFarbe = this.BackColor;
-            w.aktualisiereBitmap();
+
             w.BitmapGeaendert += OnPaint;
             
         }
@@ -219,6 +220,7 @@ namespace Roboterwelt_VLG
         {
             r.ablegen();
         }
+
 
     }
 }

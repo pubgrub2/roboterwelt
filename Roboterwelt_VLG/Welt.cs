@@ -104,14 +104,15 @@ namespace Roboterwelt_VLG
         }
         public void aktualisiereBitmap()
         {
+            int KAESTCHEN_GROESSE = 42;
             gr.Clear(hintergrundfarbe);
             for (int i = 0; i <= b; i++)
             {
-                gr.DrawLine(new Pen(new SolidBrush(Color.Black)), beschriftung+2 + i * 42, beschriftung+2, beschriftung+2 + i * 42, beschriftung+2 + h * 42);
+                gr.DrawLine(new Pen(new SolidBrush(Color.Black)), beschriftung + 2 + i * KAESTCHEN_GROESSE, beschriftung + 2, beschriftung + 2 + i * KAESTCHEN_GROESSE, beschriftung + 2 + h * KAESTCHEN_GROESSE);
             }
             for (int i = 0; i <= h; i++)
             {
-                gr.DrawLine(new Pen(new SolidBrush(Color.Black)),beschriftung+ 2, beschriftung+2 + i * 42,beschriftung+ 2 + b * 42, beschriftung+2 + i * 42);
+                gr.DrawLine(new Pen(new SolidBrush(Color.Black)), beschriftung + 2, beschriftung + 2 + i * KAESTCHEN_GROESSE, beschriftung + 2 + b * KAESTCHEN_GROESSE, beschriftung + 2 + i * KAESTCHEN_GROESSE);
             }
             for (int i = 0; i < b; i++)
             {
