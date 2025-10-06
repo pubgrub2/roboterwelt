@@ -224,6 +224,17 @@ namespace Roboterwelt_VLG
             r.ablegen();
         }
 
-
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.W: r.schritt(); break;
+                case Keys.A: r.dreheLinks(); break;
+                case Keys.D: r.dreheRechts(); break;
+                case Keys.S: r.umdrehen(); break;
+                case Keys.Q: r.aufheben(); break;
+                case Keys.E: r.ablegen(); break;
+            }
+        }
     }
 }

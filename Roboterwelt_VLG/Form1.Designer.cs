@@ -123,11 +123,12 @@
             this.Controls.Add(this.button_umdrehen);
             this.Controls.Add(this.button_ablegen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Roboterwelt";
             this.ResumeLayout(false);
-
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
         }
 
         #endregion
