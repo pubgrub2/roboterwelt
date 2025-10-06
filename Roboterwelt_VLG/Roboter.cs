@@ -191,7 +191,7 @@ namespace Roboterwelt_VLG
         }
         public void walkscript(string instructions)
         {
-            ws.interprete(this, instructions);
+            ws.Interprete(this, instructions);
         }
         private void aktualisiereBitmap()
         {

@@ -142,11 +142,12 @@ namespace Roboterwelt_VLG
                 r.dreheRechts();
                 for (int i = 0; i < 3;  i++)
                 {
-                    r.aufheben();
-                    r.schritt();
-                    r.umdrehen();
-                    r.ablegen();
-                    r.umdrehen();
+                    //r.aufheben();
+                    //r.schritt();
+                    //r.umdrehen();
+                    //r.ablegen();
+                    //r.umdrehen();
+                    r.walkscript("qwses");
                 }
                 
             }
