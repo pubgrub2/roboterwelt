@@ -56,6 +56,7 @@
     </Compile>
     <Compile Include="Haus.cs" />
     <Compile Include="Hindernis.cs" />
+    <Compile Include="InstructionSet.cs" />
     <Compile Include="Paket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
