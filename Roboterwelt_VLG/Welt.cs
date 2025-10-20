@@ -34,7 +34,7 @@ namespace Roboterwelt_VLG
         {
             b = spalten;
             h = zeilen;
-            hintergrundfarbe= Color.Yellow;
+            hintergrundfarbe= Color.DarkOliveGreen;
             feld = new Element[spalten, zeilen];
             bg = new Bitmap(beschriftung+b * 42+4, beschriftung+h * 42+4);
             gr = Graphics.FromImage(bg);

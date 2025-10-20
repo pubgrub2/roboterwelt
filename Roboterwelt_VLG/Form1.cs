@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Roboterwelt_VLG
 {
     public partial class Form1 : Form
     {
         // Hier werden die Elemente erzeugt...
-        int aufgabe = 4;
+        int aufgabe = 5;
         Welt w = new Welt(10, 12);
         Haus haus = new Haus();
         Baum b1 = new Baum();
@@ -28,6 +29,7 @@ namespace Roboterwelt_VLG
         Paket p2 = new Paket();
         Paket p3 = new Paket();
         Roboter r = new Roboter();
+        Random rand = new Random();
 
         public Form1()
         {
@@ -39,11 +41,24 @@ namespace Roboterwelt_VLG
             //.... und hier auf der Welt platziert
 
 
+            initItems();
 
+
+        }
+
+        private void initItems()
+        {
+            for (int i = 1; i < w.gibBreite(); i++)
+            {
+                for (int j = 1; j < w.gibHoehe(); j++)
+                {
+                    w.ElementAbmelden(Convert.ToChar(Convert.ToInt32(i + 64)), j);
+                }
+            }
             if (aufgabe == 1) // welt aufgabe 1 aktivieren
             {
                 w.ElementHinzufuegen(haus, 'a', 6);
-                
+
                 w.ElementHinzufuegen(r, 'b', 6);
 
                 w.ElementHinzufuegen(b1, 'd', 2);
@@ -88,7 +103,14 @@ namespace Roboterwelt_VLG
 
                 w.ElementHinzufuegen(p1, 'h', 6);
             }
+            if (aufgabe == 5)
+            {
+                w.ElementHinzufuegen(r, 'c', 8);
 
+                w.ElementHinzufuegen(haus, 'c', 2);
+
+                w.ElementHinzufuegen(b1, 'c', rand.Next(3, 8));
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -170,6 +192,32 @@ namespace Roboterwelt_VLG
                 r.walkscript("d3wawdwwdwaq");
 
             }
+            if (aufgabe == 5)
+            {
+                while (r.wasIstVorRobot() != "Haus")
+                {
+
+                    if (r.kannLaufen())
+                    {
+                        r.schritt();
+                    }
+                    else
+                    {
+                        r.dreheLinks();
+                        r.schritt();
+                        r.dreheRechts();
+                        r.schritt();
+                        r.schritt();
+                        r.dreheRechts();
+                        if (r.wasIstVorRobot() != "Haus")
+                        {
+                            r.schritt();
+                            r.dreheLinks();
+                        }
+                    }
+                }
+                r.schritt();
+            }
 
         }
 
@@ -235,6 +283,19 @@ namespace Roboterwelt_VLG
                 case Keys.Q: r.aufheben(); break;
                 case Keys.E: r.ablegen(); break;
             }
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            
+            w.ElementHinzufuegen(p3, Convert.ToChar(rand.Next(65, 65 + w.gibBreite() + 1)), rand.Next(w.gibHoehe() + 1));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            initItems();
         }
     }
 }
